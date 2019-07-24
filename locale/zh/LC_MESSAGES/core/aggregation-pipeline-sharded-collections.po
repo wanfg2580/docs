@@ -61,20 +61,14 @@ msgstr ""
 
 #: ../source/core/aggregation-pipeline-sharded-collections.txt:25
 msgid ""
-"If the pipeline starts with an exact :pipeline:`$match` on a shard key, the "
-"entire pipeline runs on the matching shard only. Previously, the pipeline "
-"would have been split, and the work of merging it would have to be done on "
-"the primary shard."
+"如果管道开始通过 :pipeline:`$match` 匹配了分片字段，后续管道只在匹配分片运行。在此之前，"
+"管道将被拆分，合并工作必须在主分片上完成。"
 msgstr ""
 
 #: ../source/core/aggregation-pipeline-sharded-collections.txt:30
 msgid ""
-"For aggregation operations that must run on multiple shards, if the "
-"operations do not require running on the database's primary shard, these "
-"operations will route the results to a random shard to merge the results to "
-"avoid overloading the primary shard for that database. The :pipeline:`$out` "
-"stage and the :pipeline:`$lookup` stage require running on the database's "
-"primary shard."
+"对于必须在多个分片上运行的聚合操作，如果操作不需要在数据库的主分片上运行，则这些操作会将结果路由到随机分片合并结果，避免主分片负荷过多。"
+":pipeline:`$out`和 :pipeline:`$lookup` 需要在数据库的主分片上运行。"
 msgstr ""
 
 #~ msgid ""
